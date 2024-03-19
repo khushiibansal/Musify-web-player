@@ -1,0 +1,230 @@
+/* Images created by: https://unsplash.com/@pawel_czerwinski */
+
+@import url("https://fonts.googleapis.com/css?family=Spartan:400,700&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-image: url('https://source.unsplash.com/1920x1080/?music'); 
+  background-size: cover;
+  background-position: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Spartan, sans-serif;
+  font-size: 12px;
+  position: relative; 
+}
+
+.left-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px; 
+  color: white;
+  height: 100vh; 
+  background-color: rgba(0, 0, 0, 0.8); 
+  padding: 20px; 
+  box-sizing: border-box; 
+  overflow-y: auto;
+  font-family: 'Montserrat', sans-serif; 
+  font-size: large;
+  border-right: 2px solid #322acc; 
+  border-bottom-right-radius: 20px; 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+}
+
+.sub-box library {
+  color: white; 
+}
+
+.nav {
+  margin-bottom: 20px; /* Add some space between sub-boxes */
+}
+
+.nav-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px; 
+  border-radius: 5px; 
+  transition: background-color 0.3s ease; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.nav-option:hover {
+  background-color: #322acc; 
+}
+
+.nav-option i {
+  margin-right: 10px;
+}
+
+.nav-option a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.player-container {
+  color: white;
+  height: 500px;
+  width: 400px;
+  background: #302f2f; 
+  border-radius: 20px;
+  box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
+}
+
+.img-container {
+  color: #fff;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  top: -50px;
+  left: 50px;
+}
+
+.img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+}
+
+h3 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  margin: 5px 0 0;
+}
+
+
+.progress-container {
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 40px 20px;
+  height: 4px;
+  width: 90%;
+}
+
+.progress {
+  background: #322acc;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+.duration-wrapper {
+  position: relative;
+  top: -25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.player-controls {
+  position: relative;
+  top: -15px;
+  left: 120px;
+  width: 200px;
+}
+
+.fas {
+  font-size: 30px;
+  color: rgb(129, 129, 129);
+  margin-right: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fas:hover {
+  filter: brightness(80%);
+}
+
+.main-button {
+  font-size: 40px;
+  position: relative;
+  top: 3px;
+}
+
+.badge {
+  background-color: #fff;
+  border: none;
+  border-radius: 100px;
+  padding: 0.25 1rem;
+  font-weight: 700;
+  margin-top: 8 px;
+  height: 2rem;
+  width: fit-content;
+}
+
+.dark-badge {
+  background-color: #000;
+  color: #fff;
+}
+.library {
+  color: white; 
+}
+
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  right: 0;
+  background-color: #121212;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0 1rem 0;
+  z-index: 1;
+}
+
+.sticky-nav-icons {
+  margin-left: 0.75rem;
+}
+
+.sticky-nav-icons img {
+  height: 1.25rem;
+  width: 1.25rem;
+  margin-right: 0.25rem;
+  opacity: 0.5;
+}
+
+.sticky-nav-option {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.log-sign-buttons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.log-sign-buttons button {
+  background: linear-gradient(to right, #322acc, #5319e7); 
+  color: #fff; 
+  border: none; 
+  border-radius: 25px; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  transition: background 0.3s ease; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.log-sign-buttons button:hover {
+  background: linear-gradient(to right, #5319e7, #322acc); 
+}
